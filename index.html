@@ -1,48 +1,51 @@
 <html>
-	<head>
-		<meta name="viewport" content="initial-scale=1" />
-		<link href='https://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
-		<link rel="stylesheet" type="text/css" href="css/animate.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="/bower_components/angular/angular.js"></script>
-	    <script src="/bower_components/angular-aria/angular-aria.js"></script>
-	    <script src="/bower_components/angular-animate/angular-animate.js"></script>
-	    <script src="/bower_components/angular-material/angular-material.js"></script>
-		<script src="js/albyxyz.js" type="text/javascript"></script>
-	</head>
-	<body ng-app="Albyxyz" ng-controller="HomeController" layout="column">
-		<section id="block1" class="md-whiteframe-z1">
-			<div id="title">
-				<span class="animated zoomInLeft letter1">a</span>
-				<span class="animated zoomInLeft letter2">l</span>
-				<span class="animated zoomInLeft letter3">b</span>
-				<span class="animated zoomInDown letter4">y</span>
-				<span class="animated zoomInRight letter5">x</span>
-				<span class="animated zoomInRight letter6">y</span>
-				<span class="animated zoomInRight letter7">z</span>
-			</div>
-			<div class="container" ng-show="expandPage">
-				<div id="navbar">
-					
+<head>
+	<meta name="viewport" content="initial-scale=1" />
+	<link href='https://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-aria/angular-aria.js"></script>
+	<script src="/bower_components/angular-animate/angular-animate.js"></script>
+	<script src="/bower_components/angular-material/angular-material.js"></script>
+	<script src="js/albyxyz.js" type="text/javascript"></script>
+</head>
+<body ng-app="Albyxyz" ng-controller="HomeController" layout="column">
+	<section id="header" class="md-whiteframe-z1" layout="column">
+		<div id="navbar">
+			<a href="/">
+				<div id="title" layout="row">
+					<div class="zoomInLeft animated letter1">a</div>
+					<div class="zoomInLeft animated letter2">l</div>
+					<div class="zoomInLeft animated letter3">b</div>
+					<div class="zoomInDown animated letter4">y</div>
+					<div class="zoomInRight animated letter5">x</div>
+					<div class="zoomInRight animated letter6">y</div>
+					<div class="zoomInRight animated letter7">z</div>
 				</div>
-				<div id="profile" class="slideUp" layout="column">
-					<div id="profile-img" class="md-whiteframe-z2">
-						
-					</div>
-					<div id="profile-name">
-						Alberto Nicoletti
-					</div>
+			</a>
+		</div>
+		<div class="container" ng-show="expandPage">
+			<div id="profile" class="slideUp" layout="column">
+				<div id="profile-img" class="md-whiteframe-z2">
+
+				</div>
+				<div id="profile-name">
+					Alberto Nicoletti
 				</div>
 			</div>
-		</section>
-		<section id="block2" class="md-whiteframe-z1" flex>
-			<div ng-show="expandPage">
-				<md-content class="md-whiteframe-z2" id="heading-center" layout-wrap>
-				    Hi, nice to meet you.
-				</md-content>
-			</div>
-		</section>
-	</body>
+		</div>
+	</section>
+	<section id="main-section" class="md-whiteframe-z1" flex>
+		<div ng-show="expandPage">
+			<md-content ng-cloak class="md-whiteframe-z2" id="heading-center" layout-wrap>
+				<div>
+					Hi, nice to meet you.
+				</div>
+			</md-content>
+		</div>
+	</section>
+</body>
 </html>
