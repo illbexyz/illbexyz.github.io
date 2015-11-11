@@ -1,8 +1,10 @@
 <html>
 <head>
 	<meta name="viewport" content="initial-scale=1" />
+	<title>Alberto Nicoletti</title>
 	<link href='https://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,25 +14,24 @@
 	<script src="/bower_components/angular-material/angular-material.js"></script>
 	<script src="js/albyxyz.js" type="text/javascript"></script>
 </head>
-<body ng-app="Albyxyz" ng-controller="HomeController" layout="column">
-	<section id="header" class="md-whiteframe-z1" layout="column">
+<body ng-app="Albyxyz" ng-controller="HomeController">
+	<section id="header" layout="column">
 		<div id="navbar">
 			<a href="/">
 				<div id="title" layout="row">
-					<div class="zoomInLeft animated letter1">a</div>
-					<div class="zoomInLeft animated letter2">l</div>
-					<div class="zoomInLeft animated letter3">b</div>
-					<div class="zoomInDown animated letter4">y</div>
-					<div class="zoomInRight animated letter5">x</div>
-					<div class="zoomInRight animated letter6">y</div>
-					<div class="zoomInRight animated letter7">z</div>
+					<div class="fadeInLeft animated letter1">a</div>
+					<div class="fadeInLeft animated letter2">l</div>
+					<div class="fadeInLeft animated letter3">b</div>
+					<div class="fadeIn animated letter4">y</div>
+					<div class="fadeInRight animated letter5">x</div>
+					<div class="fadeInRight animated letter6">y</div>
+					<div class="fadeInRight animated letter7">z</div>
 				</div>
 			</a>
 		</div>
 		<div class="container" ng-show="expandPage">
-			<div id="profile" class="slideUp" layout="column">
+			<div id="profile" class="animated fadeInUp " layout="column">
 				<div id="profile-img" class="md-whiteframe-z2">
-
 				</div>
 				<div id="profile-name">
 					Alberto Nicoletti
@@ -38,13 +39,33 @@
 			</div>
 		</div>
 	</section>
-	<section id="main-section" class="md-whiteframe-z1" flex>
-		<div ng-show="expandPage">
+	<section id="main-section">
+		<div ng-show="expandPage" layout="column">
 			<md-content ng-cloak class="md-whiteframe-z2" id="heading-center" layout-wrap>
 				<div>
 					Hi, nice to meet you.
 				</div>
+				<md-divider md-inset></md-divider>
+				<div>
+					I'm Alberto, I have always been a geek with a passion for computers and videogames. I love programming and i'm interested in almost every aspect of computer sciences, with a focus on web technologies.
+				</div>
 			</md-content>
+			<div id="projects">
+				<h1 class="animated fadeIn">Things I Made</h2>
+				<md-grid-list md-cols-sm="1" md-cols-gt-sm="2" md-gutter="12px" md-row-height="4:3">
+					<md-grid-tile ng-repeat="project in projects" class="animated fadeInUp">
+						<md-card>
+							<a href="{{project.github}}">
+								<img ng-src="{{project.image}}" class="md-card-image" alt="{{project.title}}">
+							</a>
+							<md-card-content>
+								<h2 class="md-title">{{project.title}}</h2>
+								<p>{{project.description}}</p>
+							</md-card-content>
+						</md-card>
+					</md-grid-tile>
+				</md-grid-list>
+			</div>
 		</div>
 	</section>
 </body>

@@ -1,10 +1,24 @@
 body {
 	margin: 0;
 	font-family: 'Open Sans', sans-serif;
+	width: 100%;
+	height: 100%;
+	background-color: #455A64;
 }
 
 a {
 	text-decoration: none;
+}
+
+h1 {
+	font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+md-card {
+	border-radius: 5px;
 }
 
 .container {
@@ -14,7 +28,6 @@ a {
 
 #navbar {
 	height: 80px;
-	animation : shrinkNavbar .8s 2s both linear;
 }
 
 #title {
@@ -22,15 +35,14 @@ a {
 	color: white;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 800;
-	position: relative;
+	position: absolute;
 	animation: shrinkTitle .8s 2s both ease;
 }
 
 #header {
-	height: 100%;
+	min-height: 540px;
 	background-color: #455A64;
-	animation: 	shrinkHeader 1s 2s both ease, 
-				changeBackground .5s 2s both ease;
+	animation: 	changeBackground .5s 2s both ease;
 }
 
 #main-section {
@@ -55,9 +67,10 @@ a {
 }
 
 #profile-name {
-	font-family: 'Dosis', sans-serif;
+	margin-top: 16px;
 	margin-left: 16px;
-	font-size: 50px;
+	font-size: 48px;
+	font-family: 'Russo One', sans-serif;
 	color: white;
 }
 
@@ -73,10 +86,6 @@ a {
 	animation-delay: .25s;
 }
 
-.slideUp {
-	animation: slideUp .8s both ease;
-}
-
 #heading-center {
 	padding: 32px 40px 32px 40px;
 	width: 80%;
@@ -84,49 +93,50 @@ a {
     margin-right: auto;
     font-size: 22px;
 	border-radius: 5px;
-	animation: slideUpAndCenter .4s forwards ease;
+	animation: slideUpAndCenter 1s forwards ease;
+	margin-bottom: -40px;
 }
 
-@keyframes slideUp {
-	from {
-		opacity: 0.25;
-		transform: translateY(50%);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0%);
-	}
+#heading-center md-divider {
+	margin: 16px 0;
 }
-@-webkit-keyframes slideUp {
-	from {
-		opacity: 0.25;
-		transform: translateY(50%);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0%);
-	}
+
+#projects {
+	padding: 16px;
+}
+
+md-grid-tile {
+  transition: all 200ms ease 50ms;
+}
+
+@-webkit-keyframes slideUpAndCenter {
+  from {
+  	opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+  }
+
+  to {
+  	opacity: 1;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
 }
 
 @keyframes slideUpAndCenter {
-	from {
-		opacity: 0.25;
-		transform: translateY(50%);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(-50%);
-	}
-}
-@-webkit-keyframes slideUpAndCenter {
-	from {
-		opacity: 0.25;
-		transform: translateY(50%);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(-50%);
-	}
+  from {
+  	opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0);
+    visibility: visible;
+  }
+
+  to {
+  	opacity: 1;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+  }
 }
 
 @keyframes changeBackground {
@@ -137,18 +147,6 @@ a {
 @-webkit-keyframes changeBackground {
 	to {
 		background-color: #4ECCC1;
-	}
-}
-
-@keyframes shrinkHeader {
-	to {
-		height: 540px;
-	}
-}
-
-@-webkit-keyframes shrinkHeader {
-	to {
-		height: 540px;
 	}
 }
 
@@ -197,23 +195,5 @@ a {
 		    -ms-transform: translate(0, 0);
 		     -o-transform: translate(0, 0);
 		        transform: translate(0, 0);
-	}
-}
-
-@keyframes shrinkNavbar {
-	from {
-		height: 100%;
-	}
-	to {
-		height: 80px;
-	}
-}
-
-@-webkit-keyframes shrinkNavbar {
-	from {
-		height: 100%;
-	}
-	to {
-		height: 80px;
 	}
 }
