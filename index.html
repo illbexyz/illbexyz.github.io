@@ -1,6 +1,7 @@
 <html>
 <head>
 	<meta name="viewport" content="initial-scale=1" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Alberto Nicoletti</title>
 	<link href='https://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -51,8 +52,8 @@
 				</div>
 			</md-content>
 			<div id="projects">
-				<h1 class="animated fadeIn">Things I Made</h2>
-				<md-grid-list md-cols-sm="1" md-cols-gt-sm="2" md-gutter="12px" md-row-height="4:3">
+				<h1 class="animated fadeIn">Things I Made</h1>
+				<md-grid-list md-cols-sm="1" md-cols-md="1" md-cols-gt-md="2" md-gutter="90px" md-row-height="4:3">
 					<md-grid-tile ng-repeat="project in projects" class="animated fadeInUp">
 						<md-card>
 							<a href="{{project.github}}">
@@ -68,5 +69,23 @@
 			</div>
 		</div>
 	</section>
+	<footer ng-show="expandPage">
+		<h1 class="animated fadeIn">Contact</h1>
+		<div id="socialRow" layout="row" layout-sm="column">
+			<div id="socials">
+				<div class="social" ng-repeat="social in socials">
+					<md-button href="{{social.link}}">
+						<img style="width: 20px;" ng-src="{{social.icon}}">
+						<span>{{social.username}}</span>
+					</md-button>
+				</div>
+	        </div>
+	        <div flex></div>
+	        <div id="bullshit">
+				<h3>"Doges will rule over the world."</h3>
+				<span class="quote-author">Alberto Nicoletti</span>
+	        </div>
+        </div>
+	</footer>
 </body>
 </html>

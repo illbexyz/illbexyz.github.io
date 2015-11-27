@@ -17,6 +17,12 @@ app.controller('HomeController', function($scope, $mdToast, $mdDialog) {
       image: "imgs/wowtaria.png",
       github: "https://github.com/naughtydoge/wowtaria"
   },];
+
+  $scope.socials = [
+    {title: 'Twitter', icon: 'imgs/twitter.svg', link: 'https://twitter.com/albyx93', username: '@albyx93'},
+    {title: 'Facebook', icon: 'imgs/facebook.svg', link: 'https://www.facebook.com/albertonicoletti93', username: 'albertonicoletti93'},
+    {title: 'Github', icon: 'imgs/github.svg', link: 'https://github.com/albyxyz', username: 'albyxyz'}
+  ];
   $scope.expandPage = false;
   $scope.matteDay = "";
   setTimeout(function(){

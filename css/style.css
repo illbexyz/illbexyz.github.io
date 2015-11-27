@@ -6,6 +6,52 @@ body {
 	background-color: #455A64;
 }
 
+@media (max-width: 600px) {
+	#heading-center {
+		padding: 32px 40px 32px 40px;
+	    font-size: 18px;
+		-webkit-transform: translate(0, 0);
+		   -moz-transform: translate(0, 0);
+		    -ms-transform: translate(0, 0);
+		     -o-transform: translate(0, 0);
+		        transform: translate(0, 0);
+	}
+}
+
+@media (min-width: 600px) {
+	#heading-center {
+		padding: 32px 40px 32px 40px;
+		width: 80%;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 22px;
+		border-radius: 5px;
+		animation: slideUpAndCenter 1s forwards ease;
+		margin-bottom: -40px;
+		-webkit-transform: translate(0, -50%);
+		   -moz-transform: translate(0, -50%);
+		    -ms-transform: translate(0, -50%);
+		     -o-transform: translate(0, -50%);
+		        transform: translate(0, -50%);
+	}
+}
+
+#header {
+	min-height: 540px;
+	background-color: #455A64;
+	animation: 	changeBackground .5s 2s both ease;
+}
+
+footer {
+	background-color: #263238;
+	padding: 1px;
+	color: rgba(255,255,255,0.87);
+}
+
+#main-section {
+	background-color: #455A64;
+}
+
 a {
 	text-decoration: none;
 }
@@ -39,16 +85,6 @@ md-card {
 	animation: shrinkTitle .8s 2s both ease;
 }
 
-#header {
-	min-height: 540px;
-	background-color: #455A64;
-	animation: 	changeBackground .5s 2s both ease;
-}
-
-#main-section {
-	background-color: #455A64;
-}
-
 #profile {
 	margin-left: auto;
     margin-right: auto;
@@ -68,10 +104,10 @@ md-card {
 
 #profile-name {
 	margin-top: 16px;
-	margin-left: 16px;
 	font-size: 48px;
 	font-family: 'Russo One', sans-serif;
 	color: white;
+	text-align: center;
 }
 
 .letter1, .letter7 {
@@ -86,23 +122,40 @@ md-card {
 	animation-delay: .25s;
 }
 
-#heading-center {
-	padding: 32px 40px 32px 40px;
-	width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 22px;
-	border-radius: 5px;
-	animation: slideUpAndCenter 1s forwards ease;
-	margin-bottom: -40px;
-}
-
 #heading-center md-divider {
 	margin: 16px 0;
 }
 
 #projects {
 	padding: 16px;
+}
+
+#socialRow {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#socials {
+	align-items: right;
+}
+
+#socials .md-button {
+	font-weight: 600;
+	text-transform: none;
+}
+
+#socials .md-button span {
+	vertical-align: super;
+}
+
+#bullshit {
+	align-items: center;
+	padding: 0 60px;
+	text-align: right;
+}
+
+.quote-author {
+	font-size: 14px;
 }
 
 md-grid-tile {
