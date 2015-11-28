@@ -173,7 +173,6 @@ md-card {
 	transition: background-image 0.2s ease-in-out;
 	background-image: url('../imgs/doge.jpg');
 	background-repeat: no-repeat;
-	background-attachment: fixed;
 	background-position: center; 
 }
 
