@@ -45,6 +45,7 @@ body {
 footer {
 	background-color: #263238;
 	padding: 1px;
+	padding-bottom: 60px;
 	color: rgba(255,255,255,0.87);
 }
 
@@ -127,12 +128,7 @@ md-card {
 }
 
 #projects {
-	padding: 16px;
-}
-
-#socialRow {
-	margin-left: auto;
-	margin-right: auto;
+	padding: 16px 16px 48px 16px;
 }
 
 #socials {
@@ -145,17 +141,40 @@ md-card {
 }
 
 #socials .md-button span {
-	vertical-align: super;
+	vertical-align: top;
 }
 
-#bullshit {
-	align-items: center;
-	padding: 0 60px;
-	text-align: right;
+#bullshitContainer {
+	color: white;
+}
+
+#bullshit.enter-remove {
+	animation: fadeOutUp .3s;
+}
+
+#bullshit.enter-add {
+	animation: fadeInUp .3s;
+}
+
+.md-button img {
+	margin-right: 6px;
 }
 
 .quote-author {
 	font-size: 14px;
+}
+
+.email-form {
+	border-radius: 8px;
+}
+
+.dogebg {
+	-webkit-transition: background-image 0.2s ease-in-out;
+	transition: background-image 0.2s ease-in-out;
+	background-image: url('../imgs/doge31.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
 }
 
 md-grid-tile {
