@@ -13,7 +13,7 @@ app.controller('HomeController', function($scope, $mdToast, $mdDialog, $interval
       github: "https://github.com/albyxyz/latex-it"
   }, {
       title: "Wowtaria",
-      description: "An university project. It allows you to create annotations on a set of scientific documents.",
+      description: "An university project. It allows you to create annotations on a set of scientific documents. And it's full of Doges. Wow.",
       image: "imgs/wowtaria.png",
       github: "https://github.com/naughtydoge/wowtaria"
   },];

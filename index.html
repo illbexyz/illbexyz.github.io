@@ -43,51 +43,51 @@
 	<section id="main-section">
 		<div ng-show="expandPage" layout="column">
 			<md-content ng-cloak class="md-whiteframe-z2" id="heading-center" layout-wrap>
-				<div>
-					Hi, nice to meet you.
-				</div>
-				<md-divider md-inset></md-divider>
-				<div>
-					I'm Alberto, I have always been a geek with a passion for computers and videogames. I love programming and i'm interested in almost every aspect of computer sciences, with a focus on web technologies.
-				</div>
-			</md-content>
-			<div id="projects">
-				<h1 ng-cloak class="animated fadeInUp">Things I Made</h1>
-				<md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="3" md-gutter-sm="30px" md-gutter-md="20px"  md-gutter-gt-md="10px" md-row-height-sm="1:1" md-row-height-md="4:5" md-row-height="4:3" >
-					<md-grid-tile ng-repeat="project in projects" class="animated fadeInUp">
-						<md-card class="md-whiteframe-z2">
-							<a href="{{project.github}}">
-								<img ng-src="{{project.image}}" class="md-card-image" alt="{{project.title}}">
-							</a>
-							<md-card-content>
-								<h2 class="md-title">{{project.title}}</h2>
-								<p>{{project.description}}</p>
-							</md-card-content>
-						</md-card>
-					</md-grid-tile>
-				</md-grid-list>
+			<div>
+				Hi, nice to meet you.
 			</div>
-		</div>
-	</section>
-	<footer ng-show="expandPage">
-		<h1 class="animated fadeIn">Contact</h1>
-		<div layout="row">
-			<div flex></div>
-			<div id="socialRow" layout="row" layout-sm="column">
+			<md-divider md-inset></md-divider>
+			<div>
+				I'm Alberto, I have always been a geek with a passion for computers and videogames. I love programming and i'm interested in almost every aspect of computer sciences, with a focus on web technologies.
+			</div>
+		</md-content>
+		<div id="projects">
+			<h1 ng-cloak class="animated fadeInUp">Things I Made</h1>
+			<md-grid-list md-cols-sm="1" md-cols-md="2" md-cols-gt-md="3" md-gutter-sm="30px" md-gutter-md="20px"  md-gutter-gt-md="10px" md-row-height-sm="1:1" md-row-height-md="4:5" md-row-height="3:4" >
+			<md-grid-tile ng-repeat="project in projects" class="animated fadeInUp">
+			<md-card class="md-whiteframe-z2">
+			<a href="{{project.github}}">
+				<img ng-src="{{project.image}}" class="md-card-image" alt="{{project.title}}">
+			</a>
+			<md-card-content>
+			<h2 class="md-title">{{project.title}}</h2>
+			<p>{{project.description}}</p>
+		</md-card-content>
+	</md-card>
+</md-grid-tile>
+</md-grid-list>
+</div>
+</div>
+</section>
+<footer ng-show="expandPage">
+	<h1 class="animated fadeIn">Contact</h1>
+	<div layout="row">
+		<div flex></div>
+		<div id="socialRow" layout="row" layout-sm="column">
 		        <!-- <div id="bullshitContainer">
 					<h3 id="bullshit" ng-class="bullshitClass">{{bullshit}}</h3>
 					<h3 id="bullshit" ng-class="bullshitClass">ciadasdsadasd asd fd o!</h3>
-		        </div> -->
-		        <div id="socials" layout="row">
+				</div> -->
+				<div id="socials" layout="row">
 					<div class="social" ng-repeat="social in socials">
 						<md-button href="{{social.link}}" class="md-icon-button" aria-label="{{social.title}}">
-							<img style="width: 48px; height: 48px;" ng-src="{{social.icon}}">
-						</md-button>
-					</div>
-		        </div>
-	        </div>
-	        <div flex></div>
-        </div>
-	</footer>
+						<img style="width: 48px; height: 48px;" ng-src="{{social.icon}}">
+					</md-button>
+				</div>
+			</div>
+		</div>
+		<div flex></div>
+	</div>
+</footer>
 </body>
 </html>
