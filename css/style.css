@@ -37,9 +37,8 @@ body {
 }
 
 #header {
-	min-height: 540px;
+	height: 540px;
 	background-color: #455A64;
-	animation: 	changeBackground .5s 2s both ease;
 }
 
 footer {
@@ -68,9 +67,35 @@ md-card {
 	border-radius: 5px;
 }
 
+md-card-title {
+	margin-bottom: 24px;
+}
+
+md-card-content {
+	text-overflow: ellipsis;
+}
+
+.card-image {
+	background-size: cover;
+	height: 300px;
+  border-radius: 5px;
+}
+
 .container {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.contact-icon {
+	width: 36px;
+	height: 36px;
+	margin: 0 8px;
+	transition: background-color 200ms;
+	border-radius: 17px;
+}
+
+.contact-icon:hover {
+	background-color: #85a7d0;
 }
 
 #navbar {
@@ -169,11 +194,20 @@ md-card {
 }
 
 .dogebg {
-	-webkit-transition: background-image 0.2s ease-in-out;
-	transition: background-image 0.2s ease-in-out;
+}
+
+.dogebg::before {
+	content: "";
 	background-image: url('../imgs/doge.jpg');
 	background-repeat: no-repeat;
-	background-position: center; 
+	background-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+	animation: 	fadeIn 1s both ease;
+	height: 540px;
 }
 
 md-grid-tile {
@@ -210,14 +244,20 @@ md-grid-tile {
 	}
 }
 
-@keyframes changeBackground {
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
 	to {
-		background-color: #4ECCC1;
+		opacity: 1;
 	}
 }
-@-webkit-keyframes changeBackground {
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
 	to {
-		background-color: #4ECCC1;
+		opacity: 1;
 	}
 }
 
