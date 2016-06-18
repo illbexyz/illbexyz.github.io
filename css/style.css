@@ -10,11 +10,12 @@ body {
 	#heading-center {
 		padding: 32px 40px 32px 40px;
 		font-size: 18px;
-		-webkit-transform: translate(0, 0);
-		-moz-transform: translate(0, 0);
-		-ms-transform: translate(0, 0);
-		-o-transform: translate(0, 0);
-		transform: translate(0, 0);
+		animation: slideUpAndCenter 1s forwards ease;
+		-webkit-transform: translate(0, -75px);
+		-moz-transform: translate(0, -75px);
+		-ms-transform: translate(0, -75px);
+		-o-transform: translate(0, -75px);
+		transform: translate(0, -75px);
 	}
 }
 
@@ -28,11 +29,11 @@ body {
 		border-radius: 5px;
 		animation: slideUpAndCenter 1s forwards ease;
 		margin-bottom: -40px;
-		-webkit-transform: translate(0, -50%);
-		-moz-transform: translate(0, -50%);
-		-ms-transform: translate(0, -50%);
-		-o-transform: translate(0, -50%);
-		transform: translate(0, -50%);
+		-webkit-transform: translate(0, -75px);
+		-moz-transform: translate(0, -75px);
+		-ms-transform: translate(0, -75px);
+		-o-transform: translate(0, -75px);
+		transform: translate(0, -75px);
 	}
 }
 
@@ -78,7 +79,8 @@ md-card-content {
 .card-image {
 	background-size: cover;
 	height: 300px;
-  border-radius: 5px;
+  border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 }
 
 .container {
@@ -152,8 +154,12 @@ md-card-content {
 	margin: 16px 0;
 }
 
+#heading-center p {
+  margin: 8px 0;
+}
+
 #projects {
-	padding: 16px 16px 48px 16px;
+	padding: 0px 16px 48px 16px;
 }
 
 #socials {
@@ -167,30 +173,6 @@ md-card-content {
 
 #socials .md-button span {
 	vertical-align: top;
-}
-
-#bullshitContainer {
-	color: white;
-}
-
-#bullshit.enter-remove {
-	animation: fadeOutUp .3s;
-}
-
-#bullshit.enter-add {
-	animation: fadeInUp .3s;
-}
-
-.md-button img {
-	margin-right: 6px;
-}
-
-.quote-author {
-	font-size: 14px;
-}
-
-.email-form {
-	border-radius: 8px;
 }
 
 .dogebg {
@@ -217,30 +199,30 @@ md-grid-tile {
 @-webkit-keyframes slideUpAndCenter {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 50%, 0);
-		transform: translate3d(0, 50%, 0);
+		-webkit-transform: translate(0, 50%);
+		transform: translate(0, 50%);
 		visibility: visible;
 	}
 
 	to {
 		opacity: 1;
-		-webkit-transform: translate3d(0, -50%, 0);
-		transform: translate3d(0, -50%, 0);
+		-webkit-transform: translate(0, -25%);
+		transform: translate(0, -25%);
 	}
 }
 
 @keyframes slideUpAndCenter {
 	from {
 		opacity: 0;
-		-webkit-transform: translate3d(0, 50%, 0);
-		transform: translate3d(0, 50%, 0);
+		-webkit-transform: translate(0, 50%);
+		transform: translate(0, 50%, 0);
 		visibility: visible;
 	}
 
 	to {
 		opacity: 1;
-		-webkit-transform: translate3d(0, -50%, 0);
-		transform: translate3d(0, -50%, 0);
+		-webkit-transform: translate(0, -75px);
+		transform: translate(0, -75px);
 	}
 }
 
