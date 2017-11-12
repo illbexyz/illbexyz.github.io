@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Alberto Nicoletti's personal website.">
   <meta name="author" content="Alberto Nicoletti"/>
-  <meta name="keywords" content="alberto, nicoletti, illbe, illbexyz, web programmer, google developers group, bologna, italy, javascript"/>
+  <meta name="keywords" content="alberto, nicoletti, illbe, illbexyz, web programmer, bologna, italy, javascript"/>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!-- Chrome, Firefox OS and Opera -->
   <meta name="theme-color" content="#607D8B">
@@ -36,18 +36,6 @@
   <meta name="msapplication-square150x150logo" content="/imgs/favicon/mstile-150x150.png" />
   <meta name="msapplication-wide310x150logo" content="/imgs/favicon/mstile-310x150.png" />
   <meta name="msapplication-square310x310logo" content="/imgs/favicon/mstile-310x310.png" />
-  <!-- Stylesheets -->
-  <link href='https://fonts.googleapis.com/css?family=Dosis:500,800' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Russo+One' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css">
-  <link rel="stylesheet" href="/bower_components/animate.css/animate.min.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <script src="/bower_components/angular/angular.min.js"></script>
-  <script src="/bower_components/angular-aria/angular-aria.min.js"></script>
-  <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
-  <script src="/bower_components/angular-material/angular-material.min.js"></script>
-  <script src="js/illbexyz.js" type="text/javascript"></script>
   <!-- Google Analytics -->
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -59,156 +47,26 @@
     ga('send', 'pageview');
   </script>
 </head>
-<body ng-app="Illbexyz" ng-controller="HomeController">
-  <section id="header" ng-class="headerClass" layout="column">
-    <div id="navbar">
-      <a href="/">
-        <div id="title" layout="row">
-          <div class="fadeInLeft animated letter1">i</div>
-          <div class="fadeInLeft animated letter2">l</div>
-          <div class="fadeInLeft animated letter3">l</div>
-          <div class="fadeIn animated letter4">b</div>
-          <div class="fadeIn animated letter4">e</div>
-          <div class="fadeInRight animated letter5">x</div>
-          <div class="fadeInRight animated letter6">y</div>
-          <div class="fadeInRight animated letter7">z</div>
-        </div>
-      </a>
-    </div>
-    <div ng-cloak class="container" ng-show="expandPage" layout="row" layout-sm="column">
-      <div id="profile" class="animated fadeInUp" layout="column">
-        <div id="profile-img" class="md-whiteframe-z2">
-        </div>
-        <h1 id="profile-name">
-          Alberto Nicoletti
-        </h1>
-      </div>
-    </div>
-  </section>
-  <section id="main-section">
-    <div ng-show="expandPage" layout="column">
-      <md-content ng-cloak class="md-whiteframe-z2" id="heading-center" layout-wrap>
-      <div>
-        Hi, nice to meet you.
-      </div>
-      <md-divider md-inset></md-divider>
-      <div>
-				<p>I'm Alberto, I am currently studying for a master's degree in Computer Science @University of Bologna, Italy.</p>
-				<p>I am a passionate programmer and I love web technologies in particular, my favourite language is Javascript ❤️ (ES6+ of course).</p>
-      </div>
-    </md-content>
-    <!-- <div id="projects">
-      <h2 ng-cloak class="animated fadeInUp">Things I Made</h2>
-      <md-grid-list
-        md-cols-xs="1" md-cols-sm="1" md-cols-md="2" md-cols-gt-md="3" md-cols="1"
-        md-gutter-xs="16px" md-gutter-sm="16px" md-gutter-md="48px"  md-gutter-gt-md="10px"
-        md-row-height-xs="10:15" md-row-height-sm="16:13" md-row-height-md="1:1" md-row-height-gt-md="6:7"
-      >
-        <md-grid-tile class="animated fadeInUp">
-          <md-card class="md-whiteframe-z2 card">
-            <a href="https://github.com/illbexyz/oszoo">
-              <div class="card-image" style="background-image: url(imgs/oszoo.png)">
-              </div>
-            </a>
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">OsZoo</span>
-              </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-              <p>This is MEAN stack application that allows you to select an OS from a list and execute it directly in your browser.</p>
-            </md-card-content>
-          </md-card>
-        </md-grid-tile>
-        <md-grid-tile class="animated fadeInUp">
-          <md-card class="md-whiteframe-z2 card">
-            <a href="https://github.com/illbexyz/latex-it">
-              <div class="card-image" style="background-image: url(imgs/latexit.png)">
-              </div>
-            </a>
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">LaTeX IT</span>
-              </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-              <p>A LaTeX editor for Android. It provides syntax highlighting and the compilation of the files through a remote server.</p>
-            </md-card-content>
-          </md-card>
-        </md-grid-tile>
-        <md-grid-tile class="animated fadeInUp">
-          <md-card class="md-whiteframe-z2 card">
-            <a href="https://github.com/illbexyz/pretty-raffle">
-              <div class="card-image" style="background-image: url(imgs/pretty-raffle.png)">
-              </div>
-            </a>
-            <md-card-title>
-              <md-card-title-text>
-                <span class="md-headline">Pretty Raffle</span>
-              </md-card-title-text>
-            </md-card-title>
-            <md-card-content>
-              <p>Progressive web app using Firebase 3. Allows you to create raffle lists and extract from them.</p>
-            </md-card-content>
-          </md-card>
-        </md-grid-tile>
-      </md-grid-list>
-    </div>
-  </div> -->
-</section>
-<footer ng-show="expandPage">
-  <h2 class="animated fadeIn">Contact</h2>
-  <div layout="row">
-    <div flex></div>
-    <div id="socialRow" layout="row" layout-sm="column">
-        <div id="socials" layout="row">
-          <div class="social">
-            <a href="mailto:albyx.n@gmail.com">
-              <md-icon
-                md-svg-src="imgs/email.svg"
-                aria-label="At snail Icon"
-                class="contact-icon"
-              >
-              </md-icon>
-            </a>
-            <a href="https://twitter.com/illbexyz" rel="me">
-              <md-icon
-                md-svg-src="imgs/twitter.svg"
-                aria-label="Twitter Icon"
-                class="contact-icon"
-              >
-              </md-icon>
-            </a>
-            <a href="https://www.facebook.com/albertonicoletti93" rel="me">
-              <md-icon
-                md-svg-src="imgs/facebook.svg"
-                aria-label="Facebook Icon"
-                class="contact-icon"
-              >
-              </md-icon>
-            </a>
-            <a href="https://github.com/illbexyz" rel="me">
-              <md-icon
-                md-svg-src="imgs/github.svg"
-                aria-label="Github Icon"
-                class="contact-icon"
-              >
-              </md-icon>
-            </a>
-            <a href="https://www.linkedin.com/profile/view?id=AAIAAAjCRQcBkJjwBv3V55_nr2fucKORMzAsnNI" rel="me">
-              <md-icon
-                md-svg-src="imgs/linkedin.svg"
-                aria-label="Insert Drive Icon"
-                class="contact-icon"
-              >
-              </md-icon>
-            </a>
-          </md-button>
-        </div>
-      </div>
-    </div>
-    <div flex></div>
-  </div>
-</footer>
+<body>
+  <h1>Alberto Nicoletti - illbexyz</h1>
+  <p>Hello, I'm a CS master student and I do computer related things.</p>
+  <p>My interests are:</p>
+  <ul>
+    <li>Movies</li>
+    <li>Tv series</li>
+    <li>Videogames</li>
+  </ul>
+  <p>My even nerdier interests are:</p>
+  <ul>
+    <li>Web technologies</li>
+    <li>Programming languages</li>
+    <li>Game development</li>
+  </ul>
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/illbexyz">Github</a></li>
+    <li><a href="https://twitter.com/illbexyz">Twitter</a></li>
+    <li><a href="https://www.linkedin.com/in/albertonicoletti/">LinkedIn</a></li>
+  </ul>
 </body>
 </html>
