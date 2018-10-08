@@ -17,7 +17,8 @@ const Container = styled.section`
 `
 
 const TalksPage = props => {
-  const talks = props.data.allMarkdownRemark.edges
+  const talks =
+    (props.data.allMarkdownRemark && props.data.allMarkdownRemark.edges) || []
   return (
     <Container>
       <Talks talks={talks} />

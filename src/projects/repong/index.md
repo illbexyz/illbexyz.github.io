@@ -8,4 +8,4 @@ link: 'https://github.com/illbexyz/repong'
 tags: ['reason', 'reprocessing', 'games']
 ---
 
-[![Repong](repong.gif 'Repong')](https://github.com/illbexyz/repong)
+[![Repong](image.png 'Repong')](https://github.com/illbexyz/repong)
