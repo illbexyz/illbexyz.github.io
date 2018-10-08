@@ -8,10 +8,10 @@ const Container = styled.div`
   height: 40px;
   margin: 0px 12px;
   border-radius: 25px;
-  transition: background-color 0.2s, transform 0.2s;
+  transition: background-color 0.2s;
   &:hover {
     background-color: #f0ebdf;
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
   }
 `
 const Prova = styled(SocialIcon)`
