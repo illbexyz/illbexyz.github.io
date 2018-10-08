@@ -29,7 +29,10 @@ export default TalksPage
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(filter: { frontmatter: { type: { eq: "talk" } } }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { type: { eq: "talk" } } }
+    ) {
       edges {
         node {
           html

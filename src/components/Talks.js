@@ -27,7 +27,7 @@ const Talks = ({ talks }) => (
               <ProjectTag key={i}>{tag}</ProjectTag>
             ))}
           </p>
-          <p dangerouslySetInnerHTML={{ __html: node.html }} />
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
           <p>{node.frontmatter.description}</p>
         </div>
       )

@@ -56,13 +56,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `illbe.xyz`,
+        short_name: `illbe.xyz`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#EA8859`,
+        theme_color: `#EA8859`,
         display: `minimal-ui`,
-        icon: `src/assets/gatsby-icon.png`,
+        icon: `src/assets/doge-icon.png`,
       },
     },
     `gatsby-plugin-offline`,

@@ -30,7 +30,7 @@ const Projects = ({ projects }) => (
             ))}
           </p>
           <p>{node.frontmatter.description}</p>
-          <p dangerouslySetInnerHTML={{ __html: node.html }} />
+          <div dangerouslySetInnerHTML={{ __html: node.html }} />
         </div>
       )
     })}
