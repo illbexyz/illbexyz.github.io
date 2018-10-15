@@ -10,8 +10,6 @@ import Bio from '../components/Bio'
 import Projects from '../components/Projects'
 import Talks from '../components/Talks'
 
-import { rhythm } from '../utils/typography'
-
 const Container = styled.div`
   display: flex;
   flex: 1;
@@ -38,17 +36,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Helmet
-          htmlAttributes={{ lang: 'en' }}
-          meta={[{ name: 'description', content: siteDescription }]}
-          title={siteTitle}
-        >
-          <style type="text/css">{`
-            html, body, ___gatsby {
-              height: 100%;
-            }
-        `}</style>
-        </Helmet>
+        <Helmet title={'Alberto Nicoletti | Homepage'} />
         <Container>
           <Bio />
           <Column>

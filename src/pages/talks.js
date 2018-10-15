@@ -1,8 +1,10 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
+import Helmet from 'react-helmet'
 
 import Talks from '../components/Talks'
+import Layout from '../components/layout'
 
 const Container = styled.section`
   margin-left: auto;
@@ -20,9 +22,12 @@ const TalksPage = props => {
   const talks =
     (props.data.allMarkdownRemark && props.data.allMarkdownRemark.edges) || []
   return (
-    <Container>
-      <Talks talks={talks} />
-    </Container>
+    <Layout>
+      <Helmet title={'Alberto Nicoletti | Talks'} />
+      <Container>
+        <Talks talks={talks} />
+      </Container>
+    </Layout>
   )
 }
 
