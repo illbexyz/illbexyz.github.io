@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[illbe.xyz]]></title><description><![CDATA[Alberto Nicoletti's website]]></description><link>https://illbe.xyz/</link><generator>RSS for Node</generator><lastBuildDate>Mon, 15 Oct 2018 11:07:17 GMT</lastBuildDate><item><title><![CDATA[Stairs HAR]]></title><link>https://illbe.xyz//stairs-har/</link><guid isPermaLink="false">https://illbe.xyz//stairs-har/</guid><pubDate>Mon, 01 Oct 2018 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Force Directed Spark]]></title><link>https://illbe.xyz//force-directed-spark/</link><guid isPermaLink="false">https://illbe.xyz//force-directed-spark/</guid><pubDate>Tue, 24 Jul 2018 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Ethereum Galaxy]]></title><link>https://illbe.xyz//ethereum-galaxy/</link><guid isPermaLink="false">https://illbe.xyz//ethereum-galaxy/</guid><pubDate>Tue, 06 Mar 2018 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[RePong]]></title><link>https://illbe.xyz//repong/</link><guid isPermaLink="false">https://illbe.xyz//repong/</guid><pubDate>Sun, 12 Nov 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/illbexyz/repong&quot;&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[illbe.xyz]]></title><description><![CDATA[Alberto Nicoletti's website]]></description><link>https://illbe.xyz/</link><generator>RSS for Node</generator><lastBuildDate>Tue, 27 Nov 2018 13:00:09 GMT</lastBuildDate><item><title><![CDATA[ReasonML: enjoy front-end programming again]]></title><link>https://illbe.xyz//reasonml/</link><guid isPermaLink="false">https://illbe.xyz//reasonml/</guid><pubDate>Tue, 27 Nov 2018 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://illbe.xyz/talks/reasonml&quot;&gt;
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; margin-left: 0!important; margin-right: 0!important;; max-width: 650px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 49.57118353344768%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAA7DAAAOwwHHb6hkAAABUElEQVQoz52Sa0sCURCG9///DL/4zUojIxK1Qs1r3hI3oigooqCSde8zbzNndb0S1MAwF868+8zZY2FhzIz/2Pactd7UyEEAplhySmIUSs9PPI6TXhyZ/j5Ry4gsBWWIrs5AtRKodQFqVsH9a/BNA1QvgV+ewPcTcLcGKh+bMxwGKxhxa/sLKYUMU+sSPB2Ahy3w4x3YHoEHTfCkD/Zc8Oxrh9JK6UhW/P6UQ+KuA/54S8TGXfBtD6RRhe0h+PkB7HvJ2fdXA7EUXQmKiFl1IEPVE0BXVpFxRwS7wKgN6tXB6kp6fghqlKWugZ3ZHkG9gwU+hSFc1934e14QpvccEyMSQlNvr7xekKytNrVtZDIZHORyOC0WUa1UkD86Mnm+UEA2m0W700lm9M7XoDYJF3kURfA8D47jmKgeCvV8Pje50ge+vzOXEv72UP/yqNV+AFf2AUFwK01IAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;ReasonML&quot;
+        title=&quot;Reasonml: enjoy front-end programming again&quot;
+        src=&quot;/static/image-bcbfd78d4382b0b50f580c79d2ead4cf-9e1c6.png&quot;
+        srcset=&quot;/static/image-bcbfd78d4382b0b50f580c79d2ead4cf-caa64.png 163w,
+/static/image-bcbfd78d4382b0b50f580c79d2ead4cf-d6faf.png 325w,
+/static/image-bcbfd78d4382b0b50f580c79d2ead4cf-9e1c6.png 650w,
+/static/image-bcbfd78d4382b0b50f580c79d2ead4cf-72452.png 975w,
+/static/image-bcbfd78d4382b0b50f580c79d2ead4cf-fa2fb.png 1166w&quot;
+        sizes=&quot;(max-width: 650px) 100vw, 650px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  &lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Stairs HAR]]></title><link>https://illbe.xyz//stairs-har/</link><guid isPermaLink="false">https://illbe.xyz//stairs-har/</guid><pubDate>Mon, 01 Oct 2018 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Force Directed Spark]]></title><link>https://illbe.xyz//force-directed-spark/</link><guid isPermaLink="false">https://illbe.xyz//force-directed-spark/</guid><pubDate>Tue, 24 Jul 2018 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[Ethereum Galaxy]]></title><link>https://illbe.xyz//ethereum-galaxy/</link><guid isPermaLink="false">https://illbe.xyz//ethereum-galaxy/</guid><pubDate>Tue, 06 Mar 2018 00:00:00 GMT</pubDate><content:encoded></content:encoded></item><item><title><![CDATA[RePong]]></title><link>https://illbe.xyz//repong/</link><guid isPermaLink="false">https://illbe.xyz//repong/</guid><pubDate>Sun, 12 Nov 2017 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://github.com/illbexyz/repong&quot;&gt;
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
     style=&quot;position: relative; display: block; margin-left: 0!important; margin-right: 0!important;; max-width: 402px; margin-left: auto; margin-right: auto;&quot;
