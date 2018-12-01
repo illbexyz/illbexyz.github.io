@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/talks/reasonml/precache-manifest.6f8ca4ebb853d8899733865a05e204c4.js"
+  "/talks/reasonml/precache-manifest.fd6916ed2f7600704a72f30a7a00832c.js"
 );
 
 workbox.clientsClaim();
